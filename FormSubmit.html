@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Submit</title>
+    <script src="https://kit.fontawesome.com/8e4bd60932.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="FormSubmit.css">
+
+</head>
+<body>
+    <!--start container-->
+    <div class="container">
+        <!--form start in form 4 input box-->
+        <form action="">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="input-group">
+                <label >Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="checkName()">
+           <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label >Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="checkPhone()">
+                <span id="phone-error"></span>
+            </div>
+       
+            <div class="input-group">
+                <label >Email Id</label>
+                <input type="email" placeholder="Enter Your Email"  id="contact-email" onkeyup="checkEmail()">
+                <span id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <label >Your Message</label>
+                <textarea rows="5" placeholder="Enter Your Message"  id="contact-message" onkeyup="checkMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button onclick="openPop()" type="submit" > Submit</button>
+            <span id="submit-error"></span>
+          
+
+            <div class="popup" id="popup">
+                <img src="404-tick.png" />
+                <h2> Thank You!</h2>
+                <p>Your details has been successfuly submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>  
+            </div>
+        </form>
+    </div>
+    <!--form end-->
+    <!--end container-->
+   <script src="FormSubmit.js">
+   
+   </script>
+</body>
+</html>
